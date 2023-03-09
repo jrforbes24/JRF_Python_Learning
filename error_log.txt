@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "c:\Users\johnr\Documents\GitHub\JRF_Python_Learning\debugging.py", line 21, in makeBox
+    raise Exception('"width" and "height" must be greater or equal to 2.')
+Exception: "width" and "height" must be greater or equal to 2.
+Traceback (most recent call last):
+  File "c:\Users\johnr\Documents\GitHub\JRF_Python_Learning\debugging.py", line 19, in makeBox
+    raise Exception("'character' needs to be a string of length 1")
+Exception: 'character' needs to be a string of length 1
