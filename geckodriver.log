@@ -11,3 +11,220 @@ WebDriver BiDi listening on ws://127.0.0.1:51025
 1679661966824	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
 console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\johnr\\AppData\\Local\\Temp\\rust_mozprofileXgtXRH\\search.json.mozlz4", (void 0)))
 DevTools listening on ws://127.0.0.1:51025/devtools/browser/832a2246-6b75-4449-a1f1-b8b6527c7531
+1681948549290	geckodriver	INFO	Listening on 127.0.0.1:54395
+1681948552354	mozrunner::runner	INFO	Running command: "C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "54396" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\johnr\\AppData\\Local\\Temp\\rust_mozprofile5TkqDg"
+1681948788758	geckodriver	INFO	Listening on 127.0.0.1:54535
+1681948791852	mozrunner::runner	INFO	Running command: "C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "54536" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\johnr\\AppData\\Local\\Temp\\rust_mozprofileBYaGvp"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1681948792730	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1681948792736	Marionette	INFO	Listening on port 54545
+Read port: 54545
+WebDriver BiDi listening on ws://127.0.0.1:54536
+1681948792909	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\johnr\\AppData\\Local\\Temp\\rust_mozprofileBYaGvp\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:54536/devtools/browser/7a6b74ba-a6ed-4ef1-ae0e-bb2279732514
+1681950630462	geckodriver	INFO	Listening on 127.0.0.1:54667
+1681950633494	mozrunner::runner	INFO	Running command: "C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "54668" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\johnr\\AppData\\Local\\Temp\\rust_mozprofile3p2649"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1681950634082	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1681950634088	Marionette	INFO	Listening on port 54677
+Read port: 54677
+WebDriver BiDi listening on ws://127.0.0.1:54668
+1681950634551	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\johnr\\AppData\\Local\\Temp\\rust_mozprofile3p2649\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:54668/devtools/browser/28c7fbb5-1501-4631-848e-693a0ea4c3ab
+1681950640525	Marionette	INFO	Stopped listening on port 54677
+Dynamically enable window occlusion 1
+console.log: "RemoteSettingsWorker error: AbortError: IndexedDB:  execute() A request was aborted, for example through a call to IDBTransaction.abort."
+console.log: "RemoteSettingsWorker error: AbortError: IndexedDB:  execute() A request was aborted, for example through a call to IDBTransaction.abort."
+console.error: (new RemoteSettingsWorkerError("AbortError: IndexedDB:  execute() A request was aborted, for example through a call to IDBTransaction.abort.", "resource://services-settings/RemoteSettingsWorker.jsm", 46))
+console.log: "RemoteSettingsWorker error: Error: Can't import when we've started shutting down."
+console.error: (new RemoteSettingsWorkerError("AbortError: IndexedDB:  execute() A request was aborted, for example through a call to IDBTransaction.abort.", "resource://services-settings/RemoteSettingsWorker.jsm", 46))
+console.error: (new RemoteSettingsWorkerError("Error: Can't import when we've started shutting down.", "resource://services-settings/RemoteSettingsWorker.jsm", 46))
+console.log: "RemoteSettingsWorker error: AbortError: IndexedDB:  execute() A request was aborted, for example through a call to IDBTransaction.abort."
+console.error: (new RemoteSettingsWorkerError("AbortError: IndexedDB:  execute() A request was aborted, for example through a call to IDBTransaction.abort.", "resource://services-settings/RemoteSettingsWorker.jsm", 46))
+console.log: "RemoteSettingsWorker error: AbortError: IndexedDB:  execute() A request was aborted, for example through a call to IDBTransaction.abort."
+console.error: (new RemoteSettingsWorkerError("AbortError: IndexedDB:  execute() A request was aborted, for example through a call to IDBTransaction.abort.", "resource://services-settings/RemoteSettingsWorker.jsm", 46))
+console.error: (new StorageError("Storage error: AbortError: IndexedDB: main/quicksuggest list() IndexedDB:  execute() A request was aborted, for example through a call to IDBTransaction.abort.", "resource://services-settings/RemoteSettingsClient.jsm", 162))
+console.error: (new StorageError("Storage error: AbortError: IndexedDB: main/quicksuggest list() IndexedDB:  execute() A request was aborted, for example through a call to IDBTransaction.abort.", "resource://services-settings/RemoteSettingsClient.jsm", 162))
+console.error: (new StorageError("Storage error: AbortError: IndexedDB: main/quicksuggest list() IndexedDB:  execute() A request was aborted, for example through a call to IDBTransaction.abort.", "resource://services-settings/RemoteSettingsClient.jsm", 162))
+1682037166149	geckodriver	INFO	Listening on 127.0.0.1:51753
+1682037169200	mozrunner::runner	INFO	Running command: "C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "51754" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\johnr\\AppData\\Local\\Temp\\rust_mozprofileEz8z4b"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1682037169702	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1682037169708	Marionette	INFO	Listening on port 51762
+Read port: 51762
+WebDriver BiDi listening on ws://127.0.0.1:51754
+1682037169855	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\johnr\\AppData\\Local\\Temp\\rust_mozprofileEz8z4b\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:51754/devtools/browser/4cc3a3ee-9893-4b4b-b3ac-a68cb9449d5c
+1682037175305	Marionette	INFO	Stopped listening on port 51762
+Dynamically enable window occlusion 1
+1682037301757	geckodriver	INFO	Listening on 127.0.0.1:51824
+1682037304771	mozrunner::runner	INFO	Running command: "C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "51825" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\johnr\\AppData\\Local\\Temp\\rust_mozprofilednS0qn"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1682037305164	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1682037305169	Marionette	INFO	Listening on port 51834
+Read port: 51834
+WebDriver BiDi listening on ws://127.0.0.1:51825
+1682037305298	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\johnr\\AppData\\Local\\Temp\\rust_mozprofilednS0qn\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:51825/devtools/browser/8f3628f9-e3ba-4a8b-9802-7a3a84bd64ca
+1682037357961	geckodriver	INFO	Listening on 127.0.0.1:51885
+1682037361008	mozrunner::runner	INFO	Running command: "C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "51886" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\johnr\\AppData\\Local\\Temp\\rust_mozprofileGCeFPg"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1682037362250	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1682037362255	Marionette	INFO	Listening on port 51895
+Read port: 51895
+WebDriver BiDi listening on ws://127.0.0.1:51886
+1682037362513	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\johnr\\AppData\\Local\\Temp\\rust_mozprofileGCeFPg\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:51886/devtools/browser/5e57092a-0aa0-4142-9a98-8a926e097c88
+console.error: (new TypeError("this._searchProviderInfo is null", "resource:///modules/SearchSERPTelemetry.sys.mjs", 468))
+JavaScript error: https://media.ethicalads.io/media/client/v1.4.0/ethicalads.min.js, line 1: Error: No ad placements found.
+JavaScript error: resource:///actors/FormValidationChild.sys.mjs, line 178: TypeError: this._element is null
+1682037579021	geckodriver	INFO	Listening on 127.0.0.1:52020
+1682037582074	mozrunner::runner	INFO	Running command: "C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "52021" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\johnr\\AppData\\Local\\Temp\\rust_mozprofileP0WD9f"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1682037582481	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1682037582487	Marionette	INFO	Listening on port 52031
+WebDriver BiDi listening on ws://127.0.0.1:52021
+Read port: 52031
+1682037583739	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\johnr\\AppData\\Local\\Temp\\rust_mozprofileP0WD9f\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:52021/devtools/browser/3f509006-fa9f-4dd7-acea-85ffef7b9985
+console.error: (new TypeError("this._searchProviderInfo is null", "resource:///modules/SearchSERPTelemetry.sys.mjs", 468))
+JavaScript error: https://media.ethicalads.io/media/client/v1.4.0/ethicalads.min.js, line 1: Error: No ad placements found.
+JavaScript error: resource:///actors/FormValidationChild.sys.mjs, line 178: TypeError: this._element is null
+1682037676840	geckodriver	INFO	Listening on 127.0.0.1:52101
+1682037679894	mozrunner::runner	INFO	Running command: "C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "52102" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\johnr\\AppData\\Local\\Temp\\rust_mozprofilebYyDHl"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1682037680328	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1682037680334	Marionette	INFO	Listening on port 52111
+Read port: 52111
+WebDriver BiDi listening on ws://127.0.0.1:52102
+1682037680469	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\johnr\\AppData\\Local\\Temp\\rust_mozprofilebYyDHl\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:52102/devtools/browser/4bcce920-5f99-4b1f-bbda-d325e5f8f8cc
+console.error: (new TypeError("this._searchProviderInfo is null", "resource:///modules/SearchSERPTelemetry.sys.mjs", 468))
+JavaScript error: https://media.ethicalads.io/media/client/v1.4.0/ethicalads.min.js, line 1: Error: No ad placements found.
+JavaScript error: resource:///actors/FormValidationChild.sys.mjs, line 178: TypeError: this._element is null
+1682037781058	geckodriver	INFO	Listening on 127.0.0.1:52177
+1682037784145	mozrunner::runner	INFO	Running command: "C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "52178" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\johnr\\AppData\\Local\\Temp\\rust_mozprofilet0pgqF"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1682037784569	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1682037784575	Marionette	INFO	Listening on port 52187
+Read port: 52187
+WebDriver BiDi listening on ws://127.0.0.1:52178
+1682037784716	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\johnr\\AppData\\Local\\Temp\\rust_mozprofilet0pgqF\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:52178/devtools/browser/5f26bb68-7b7f-4e7c-b69b-391a5f58de99
+console.error: (new TypeError("this._searchProviderInfo is null", "resource:///modules/SearchSERPTelemetry.sys.mjs", 468))
+JavaScript error: https://media.ethicalads.io/media/client/v1.4.0/ethicalads.min.js, line 1: Error: No ad placements found.
+JavaScript error: resource:///actors/FormValidationChild.sys.mjs, line 178: TypeError: this._element is null
+1682037987401	geckodriver	INFO	Listening on 127.0.0.1:52265
+1682037990447	mozrunner::runner	INFO	Running command: "C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "52266" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\johnr\\AppData\\Local\\Temp\\rust_mozprofilew9j4d1"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1682037990858	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1682037990864	Marionette	INFO	Listening on port 52275
+Read port: 52275
+WebDriver BiDi listening on ws://127.0.0.1:52266
+1682037991017	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\johnr\\AppData\\Local\\Temp\\rust_mozprofilew9j4d1\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:52266/devtools/browser/0e69bb91-8b08-498a-8ec8-b9d05aeabcaf
+console.error: (new TypeError("this._searchProviderInfo is null", "resource:///modules/SearchSERPTelemetry.sys.mjs", 468))
+JavaScript error: https://media.ethicalads.io/media/client/v1.4.0/ethicalads.min.js, line 1: Error: No ad placements found.
+JavaScript error: resource:///actors/FormValidationChild.sys.mjs, line 178: TypeError: this._element is null
+1682038295254	geckodriver	INFO	Listening on 127.0.0.1:52355
+1682038298302	mozrunner::runner	INFO	Running command: "C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "52356" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\johnr\\AppData\\Local\\Temp\\rust_mozprofileQZ4LkW"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1682038298715	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1682038298721	Marionette	INFO	Listening on port 52365
+Read port: 52365
+WebDriver BiDi listening on ws://127.0.0.1:52356
+1682038298849	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\johnr\\AppData\\Local\\Temp\\rust_mozprofileQZ4LkW\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:52356/devtools/browser/93027af7-aa61-4f7b-b51f-f17e74ba91f5
+console.error: (new TypeError("this._searchProviderInfo is null", "resource:///modules/SearchSERPTelemetry.sys.mjs", 468))
+JavaScript error: https://media.ethicalads.io/media/client/v1.4.0/ethicalads.min.js, line 1: Error: No ad placements found.
+JavaScript error: resource:///actors/FormValidationChild.sys.mjs, line 178: TypeError: this._element is null
+1682038390367	geckodriver	INFO	Listening on 127.0.0.1:52437
+1682038393402	mozrunner::runner	INFO	Running command: "C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "52438" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\johnr\\AppData\\Local\\Temp\\rust_mozprofilePe13Aq"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1682038393796	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1682038393802	Marionette	INFO	Listening on port 52447
+Read port: 52447
+WebDriver BiDi listening on ws://127.0.0.1:52438
+1682038393932	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\johnr\\AppData\\Local\\Temp\\rust_mozprofilePe13Aq\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:52438/devtools/browser/581d1bed-0c03-449c-9359-cb9997aff7eb
+console.error: (new TypeError("this._searchProviderInfo is null", "resource:///modules/SearchSERPTelemetry.sys.mjs", 468))
+JavaScript error: https://media.ethicalads.io/media/client/v1.4.0/ethicalads.min.js, line 1: Error: No ad placements found.
+JavaScript error: resource:///actors/FormValidationChild.sys.mjs, line 178: TypeError: this._element is null
+1682038481262	geckodriver	INFO	Listening on 127.0.0.1:52515
+1682038484298	mozrunner::runner	INFO	Running command: "C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "52516" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\johnr\\AppData\\Local\\Temp\\rust_mozprofileZRY0Aj"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1682038484750	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1682038484759	Marionette	INFO	Listening on port 52525
+WebDriver BiDi listening on ws://127.0.0.1:52516
+Read port: 52525
+1682038485182	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\johnr\\AppData\\Local\\Temp\\rust_mozprofileZRY0Aj\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:52516/devtools/browser/26d68db1-d3e8-493a-bc1d-f6166c30aa2a
+console.error: (new TypeError("this._searchProviderInfo is null", "resource:///modules/SearchSERPTelemetry.sys.mjs", 468))
+JavaScript error: https://media.ethicalads.io/media/client/v1.4.0/ethicalads.min.js, line 1: Error: No ad placements found.
+JavaScript error: resource:///actors/FormValidationChild.sys.mjs, line 178: TypeError: this._element is null
+1682038705087	geckodriver	INFO	Listening on 127.0.0.1:52598
+1682038708124	mozrunner::runner	INFO	Running command: "C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "52599" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\johnr\\AppData\\Local\\Temp\\rust_mozprofileyLmnD0"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1682038708516	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1682038708522	Marionette	INFO	Listening on port 52608
+Read port: 52608
+WebDriver BiDi listening on ws://127.0.0.1:52599
+1682038708654	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\johnr\\AppData\\Local\\Temp\\rust_mozprofileyLmnD0\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:52599/devtools/browser/c0c0881d-9381-4c51-837d-703885416e3d
+console.error: (new TypeError("this._searchProviderInfo is null", "resource:///modules/SearchSERPTelemetry.sys.mjs", 468))
+JavaScript error: https://media.ethicalads.io/media/client/v1.4.0/ethicalads.min.js, line 1: Error: No ad placements found.
+JavaScript error: resource:///actors/FormValidationChild.sys.mjs, line 178: TypeError: this._element is null
+Shutting down due to socket process crash.
+1682039094149	geckodriver	INFO	Listening on 127.0.0.1:52713
+1682039097200	mozrunner::runner	INFO	Running command: "C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "52714" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\johnr\\AppData\\Local\\Temp\\rust_mozprofilevIN0Mr"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1682039097591	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1682039097597	Marionette	INFO	Listening on port 52723
+Read port: 52723
+WebDriver BiDi listening on ws://127.0.0.1:52714
+1682039097725	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\johnr\\AppData\\Local\\Temp\\rust_mozprofilevIN0Mr\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:52714/devtools/browser/083d8dd2-9334-4e6e-ad11-be59172aa020
+JavaScript error: https://media.ethicalads.io/media/client/v1.4.0/ethicalads.min.js, line 1: Error: No ad placements found.
+JavaScript error: resource:///actors/FormValidationChild.sys.mjs, line 178: TypeError: this._element is null
