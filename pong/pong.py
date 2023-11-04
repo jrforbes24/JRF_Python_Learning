@@ -3,6 +3,7 @@
 # Pat 1: Getting Started
 
 import turtle
+import winsound
 
 wn = turtle.Screen()
 wn.title("Pong by John R Forbes")
@@ -10,11 +11,15 @@ wn.bgcolor("black")
 wn.setup(width=800, height=600)
 wn.tracer(0)
 
+# score
+score_a = 0
+score_b = 0
+
 # paddle A
 paddle_a = turtle.Turtle()
 paddle_a.speed(0)
 paddle_a.shape("square")
-paddle_a.color("blanched almond")
+paddle_a.color("white")
 paddle_a.shapesize(stretch_wid=5, stretch_len=1)
 paddle_a.penup()
 paddle_a.goto(-350,0)
@@ -23,7 +28,7 @@ paddle_a.goto(-350,0)
 paddle_b = turtle.Turtle()
 paddle_b.speed(0)
 paddle_b.shape("square")
-paddle_b.color("blanched almond")
+paddle_b.color("white")
 paddle_b.shapesize(stretch_wid=5, stretch_len=1)
 paddle_b.penup()
 paddle_b.goto(350,0)
@@ -35,8 +40,17 @@ ball.shape("square")
 ball.color("white")
 ball.penup()
 ball.goto(0,0)
-ball.dx = 0.1
-ball.dy = 0.1
+ball.dx = 0.15
+ball.dy = 0.15
+
+# Pen
+pen = turtle.Turtle()
+pen.speed(0)
+pen.color("white")
+pen.penup()
+pen.hideturtle()
+pen.goto(0,260)
+pen.write("Player A: 0  Player B: 0", align="center", font=("Courier", 24, "normal"))
 
 # Function to move paddles up or down
 def paddle_a_up():
@@ -78,15 +92,37 @@ while True:
     if ball.ycor() > 290:
         ball.sety(290)
         ball.dy *= -1
+        winsound.PlaySound("pong\mainpowerup.wav", winsound.SND_ASYNC)
         
     if ball.ycor() < -290:
         ball.sety(-290)
         ball.dy *= -1
+        winsound.PlaySound("pong\mainpowerup.wav", winsound.SND_ASYNC)
     
     if ball.xcor() > 390:
         ball.goto(0, 0)
         ball.dx *= -1
+        score_a += 1
+        pen.clear()
+        winsound.PlaySound("pong\BOMB.wav", winsound.SND_ASYNC)
+        pen.write("Player A: {}  Player B: {}".format(score_a, score_b), align="center", font=("Courier", 24, "normal"))
     
     if ball.xcor() < -390:
         ball.goto(0, 0)
         ball.dx *= -1
+        score_b += 1
+        pen.clear()
+        winsound.PlaySound("pong\BOMB.wav", winsound.SND_ASYNC)
+        pen.write("Player A: {}  Player B: {}".format(score_a, score_b), align="center", font=("Courier", 24, "normal"))
+        
+    # Paddle and ball collisions
+    if (ball.xcor() > 340 and ball.xcor() < 350) and (ball.ycor() < paddle_b.ycor() + 50 and ball.ycor() > paddle_b.ycor() - 50 ):
+        ball.setx(340)
+        ball.dx *= -1
+        winsound.PlaySound("pong\mainpowerup.wav", winsound.SND_ASYNC)
+    
+    if (ball.xcor() < -340 and ball.xcor() > -350) and (ball.ycor() < paddle_a.ycor() + 50 and ball.ycor() > paddle_a.ycor() - 50 ):
+        ball.setx(-340)
+        ball.dx *= -1
+        winsound.PlaySound("pong\mainpowerup.wav", winsound.SND_ASYNC)
+         
