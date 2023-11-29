@@ -17,11 +17,58 @@ class cube(object) :
         pass
 
 class snake(object):
+    body = []
+    turns = {}
     def __init__(self, color, pos):
-        pass
+        self.color = color
+        self.head = cube(pos)
+        self.body.append(self.head)
+        self.dirnx = 0
+        self.dirny = 1
+        
     
     def move(self):
-        pass
+        for event in pygame.event.get():
+            if event.type == pygame.QUIT:
+                pygame.quit()
+                
+            keys = pygame.key.get_pressed()
+            
+            for key in keys:
+                if keys[pygame.K_LEFT]:
+                    self.dirnx = -1
+                    self.dirny = 0
+                    self.turns[self.head.pos[:]] = [self.dirnx, self.dirny]
+                    
+                elif keys[pygame.K_RIGHT]:
+                    self.dirnx = 1
+                    self.dirny = 0
+                    self.turns[self.head.pos[:]] = [self.dirnx, self.dirny]
+                    
+                elif keys[pygame.K_UP]:
+                    self.dirnx = 0
+                    self.dirny = -1
+                    self.turns[self.head.pos[:]] = [self.dirnx, self.dirny]
+                    
+                elif keys[pygame.K_DOWN]:
+                    self.dirnx = 0
+                    self.dirny = 1
+                    self.turns[self.head.pos[:]] = [self.dirnx, self.dirny]
+        
+        # Enumerate over the cubes in the body list            
+        for i, cube in enumerate(self.body):
+            # Get the position of the cube
+            p = cube.pos[:]
+            # If the position is in the dictionary of turns 
+            if p in self.turns:
+                # Get the turn from the turns dictionary
+                turn = self.turns[p]
+                # Call the move function with the turn
+                cube.move(turn[0], turn[1])
+                # If the index is the end of the body list, remove the turn from the list
+                if i == len(self.body)-1:
+                    self.turns.pop()    
+            
     
     def reset(self, pos):
         pass
@@ -60,8 +107,8 @@ def message_box(subject, content):
 
 def main():
     global width, rows
-    width = 500
-    rows = 20
+    width = 600
+    rows = 30
     win = pygame.display.set_mode((width, width))
     s = snake ((255, 0, 0), (10, 10))
     flag = True
