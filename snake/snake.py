@@ -7,14 +7,26 @@ import tkinter as tk
 from tkinter import messagebox
 
 class cube(object) :
-    rows = 0
-    w = 0
+    rows = 20
+    w = 500
     def __init__(self,start,dirnx=1, dirny=0, color=(255, 0, 0)):
-        pass
+        self.pos = start
+        self.dirnx = 1
+        self.dirny = 0
+        self.color = color        
+        
+    
     def move(self, dirnx, dirny):
-        pass
+        self.dirnx = dirnx
+        self.dirny = dirny
+        self.pos(self.pos[0] + self.dirnx, self.pos[1] + self.dirny)
+        
     def draw(self, surface, eyes=False):
-        pass
+        dis = self.w // self.rows 
+        i = self.pos[0]
+        j = self.pos[1]
+        pygame.draw.rect(surface, self.color, (i*dis+1,j*dis+1, dis-2, dis-2))
+        
 
 class snake(object):
     body = []
@@ -68,7 +80,12 @@ class snake(object):
                 # If the index is the end of the body list, remove the turn from the list
                 if i == len(self.body)-1:
                     self.turns.pop()    
-            
+            else:
+              if cube.dirnx == -1 and cube.pos[0] <= 0: cube.pos = (cube.rows-1, cube.pos[1]) 
+              elif cube.dirnx == 1 and cube.pos[0] >= cube.rows-1: cube.pos = (0, cube.pos[1])
+              elif cube.dirny == 1 and cube.pos[1] >= cube.rows-1: cube.pos = (cube.pos[0], 0)
+              elif cube.dirny == -1 and cube.pos[1] <= 0: cube.pos = (cube.pos[0], cube.rows-1)
+              else: cube.move(cube.dirnx,cube.dirny)
     
     def reset(self, pos):
         pass
@@ -77,7 +94,12 @@ class snake(object):
         pass
     
     def draw(self, surface):
-        pass
+        for i, cube in enumerate(self.body):
+            if i == 0:
+                cube.draw(surface, True)
+            else:
+                cube.draw(surface)
+        
     
 def drawGrid(w, rows, surface):
     sizeBtwn = w // rows
@@ -90,11 +112,12 @@ def drawGrid(w, rows, surface):
         
         pygame.draw.line(surface, (255, 255, 255), (x,0),(x,w))
         pygame.draw.line(surface, (255, 255, 255), (0,y),(w,y))
-    pass
-
+    
+    
 def redrawWindow(surface):
-    global rows, width
+    global rows, width, snake
     surface.fill((0, 0, 0))
+    snake.draw(surface)
     drawGrid(width, rows, surface)
     pygame.display.update()
     pass
@@ -106,7 +129,7 @@ def message_box(subject, content):
     pass
 
 def main():
-    global width, rows
+    global width, rows, snake
     width = 600
     rows = 30
     win = pygame.display.set_mode((width, width))
@@ -120,7 +143,7 @@ def main():
         clock.tick(10)
         redrawWindow(win)        
         
-    pass
+   
 
 
 
