@@ -1,4 +1,5 @@
 import numpy as np
+import pygame
 
 ROW_COUNT = 6
 COLUMN_COUNT = 7
@@ -41,15 +42,29 @@ def winning_move(board,piece):
             if board[r][c] == piece and board[r+1][c+1] == piece and board[r+2][c+2] == piece and board[r+3][c+3] == piece:
                 return True
     # Check negatively diagonal locations for win
-    
-    
+    for c in range(COLUMN_COUNT-3):
+        for r in range(3,ROW_COUNT):
+            if board[r][c] == piece and board[r-1][c+1] == piece and board[r-2][c+2] == piece and board[r-3][c+3] == piece:
+                return True
+            
+def draw_board(board):
+    pass    
 
 print("Welcome to Connect 4!")
-
 board = create_board()
-
 game_over = False
 turn = 0
+
+pygame.init()
+# define the board size
+SQUARESIZE = 100
+width = COLUMN_COUNT * SQUARESIZE
+height = (ROW_COUNT+1) * SQUARESIZE
+size = (width, height)
+# set up the screen
+screen = pygame.display.set_mode(size)
+
+
 
 while not game_over:
      # Ask for Player 1 Input
@@ -73,7 +88,11 @@ while not game_over:
         if is_valid_location(board, col):
             row = get_next_open_row(board, col)
             drop_piece(board, row, col, 2)
-            
+        
+            if winning_move(board, 2):
+                print("Player 2 Wins!! YAY!!")
+                game_over = True
+                    
         print_board(board)
     
     turn += 1
