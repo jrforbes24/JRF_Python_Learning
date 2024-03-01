@@ -1,6 +1,7 @@
 {
     "cSpell.words": [
-        "pyperclip"
+        "pyperclip",
+        "pytube"
     ],
     "files.autoSave": "onWindowChange"
 }
