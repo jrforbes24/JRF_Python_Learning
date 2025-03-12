@@ -37,6 +37,23 @@
 
 # print(active_users)
 
-for i in range(100, 200):
-    print(i)
+# for i in range(10, 21):
+#     print(i, end=" ")
+#     print("")
 
+# a = 'Washington'
+
+# for i in range(len(a)):
+#     print(i+1, a[i]) 
+
+# print(sum(range(10)))
+
+# seasons = ['Spring', 'Summer', 'Fall', 'Winter']
+# seasonIndex = list(enumerate(seasons))
+# print(seasonIndex[0])
+
+for n in range(2, 10):
+    for x in range(2, n):
+        if n % x == 0:
+            print(f"{n} equals {x} * {n//x}")
+            break
