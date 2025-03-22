@@ -136,5 +136,146 @@
 
 
 
+thisDict = {
+    'brand': 'Ford',
+    'model': 'Mustang',
+    'year': 1964
+}
+thisDict['color'] = 'red'
+thisDict['horsepower'] = 271
+
+# # print(len(thisDict))
+# # print(type(thisDict))
+# # print(thisDict)
+# # print(thisDict['brand'])
+# print(thisDict.keys())
+# print(thisDict.get('horsepower','umm not there'))
+# thisDict['horsepower'] = 250
+# print(thisDict.keys())
+# print(thisDict.get('horsepower','umm not there'))
+# print(thisDict.values())
+# print(thisDict.items())
+
+# if 'horsepower' in thisDict:
+#     print('Yep found horsepower.')
+
+
+
+# print(thisDict)
+# thisDict['year'] = 2025
+# print(thisDict)
+# thisDict.update({'year':2015})
+# print(thisDict)
+# popped = thisDict.pop('color')
+# print('What was popped:', popped)
+# print(thisDict)
+# popped_Item = thisDict.popitem()
+# print('The item popped:', popped_Item)
+# print(thisDict)
+# del thisDict['year']
+# print(thisDict)
+# thisDict.clear()
+# print(thisDict)
+
+# Dad = {
+#     'name': 'John',
+#     'age': 35,
+#     'sex': 'male'
+# }
+
+# Mom = {
+#     'name': 'Cindy',
+#     'age': 31,
+#     'sex': 'male'
+# }
+
+# child6 = {
+#     'name': 'Lucie',
+#     'age': 8,
+#     'sex': 'female'
+# }
+
+# family_at_home = {
+#     'Dad': Dad,
+#     'Mom': Mom,
+#     'child6': child6
+# }
+
+# print( family_at_home )
+
+# print( "Mom's name:", family_at_home['Mom']['name'])
+
+# print('Now looping!')
+
+# for x, obj in family_at_home.items():
+#     print(x)
+
+#     for y in obj:
+#         print(y + ':', obj[y])
+
+# print(family_at_home['Dad']['name'])
+
+# squares = [x**2 for x in range(10,15)]
+
+# print(squares)
+
+# name = input('Hi, what is your name? ')
+
+# def greeting(the_name):
+#     print('Hello', the_name, 'welcome to my world!')
+
+# def addNumbers(num1, num2):
+#     return num1 + num2
+
+# greeting(name)
+
+# number1 = int(input('What is the first number you would like to play? '))
+# number2 = int(input('What is the second number you would like to play? '))
+
+# print('The sum of your numbers is: ', str(addNumbers(number1, number2)))
+
+# print("Fibonacci series")
+
+# def fib(n):
+#     a, b = 0, 1
+#     while a < n:
+#         print(a, end=' ')
+#         a, b = b, a+b
+#     print()
+
+# fib(10000)
+
+# i = 5
+
+# def f(arg=i):
+#     print(arg)
+
+# i = 15
+
+# f()
+# f(i)
+
+# def my_sum(*args):
+#     result = ''
+#     for x in args:
+#         result = result + x + ' '
+#     return result
+
+# print(my_sum('Go', '2', 'Town'))
+
+def concatenate(**kwargs):
+    result = ""
+    # Iterating over the Python kwargs dictionary
+    for arg in kwargs.values():
+        result += arg
+    return result
+
+print(concatenate(e="!",a="Real", f="Python", c="Is", d="Great" ))
+
+
+
+
+
+
 
 
