@@ -272,6 +272,13 @@ def concatenate(**kwargs):
 
 print(concatenate(e="!",a="Real", f="Python", c="Is", d="Great" ))
 
+import fibo
+
+print("What we imported:", fibo.__name__)
+
+fibo.fib(1000)
+print(fibo.fib2(100))
+
 
 
 
