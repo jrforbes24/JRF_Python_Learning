@@ -25,9 +25,9 @@ for i in range(1, 11):
 
 
 records = (
-    (3, '101', 'bacon'),
+    (3, '101', 'Spam'),
     (7, '422', 'Eggs'),
-    (4, '6361', 'Spam, spam, egges, and spam')
+    (4, '631', 'Spam, spam, eggs, and spam')
 )
 
 table = document.add_table(rows=1, cols=3)

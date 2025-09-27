@@ -136,13 +136,13 @@
 
 
 
-thisDict = {
-    'brand': 'Ford',
-    'model': 'Mustang',
-    'year': 1964
-}
-thisDict['color'] = 'red'
-thisDict['horsepower'] = 271
+# thisDict = {
+#     'brand': 'Ford',
+#     'model': 'Mustang',
+#     'year': 1964
+# }
+# thisDict['color'] = 'red'
+# thisDict['horsepower'] = 271
 
 # # print(len(thisDict))
 # # print(type(thisDict))
@@ -263,21 +263,53 @@ thisDict['horsepower'] = 271
 
 # print(my_sum('Go', '2', 'Town'))
 
-def concatenate(**kwargs):
-    result = ""
-    # Iterating over the Python kwargs dictionary
-    for arg in kwargs.values():
-        result += arg
-    return result
+# def concatenate(**kwargs):
+#     result = ""
+#    # Iterating over the Python kwargs dictionary
+#     for arg in kwargs.values():
+#         result += arg
+#     return result
 
-print(concatenate(e="!",a="Real", f="Python", c="Is", d="Great" ))
+# print(concatenate(e="!",a="Real", f="Python", c="Is", d="Great" ))
 
-import fibo
+# import fibo
 
-print("What we imported:", fibo.__name__)
+# # print("What we imported:", fibo.__name__)
 
-fibo.fib(1000)
-print(fibo.fib2(100))
+# # fibo.fib(1000)
+# # print(fibo.fib2(100)) 
+
+# my_shopping_list = ['milk','bread','sugar']
+
+# my_shopping_list[0] = 'fresca'
+# # print(my_shopping_list)
+
+# my_shopping_list[2] = 'bananas'
+# # print(my_shopping_list)
+
+# my_shopping_list.append('strawberries')
+# my_shopping_list.insert(2, 'sweet potato')
+# my_shopping_list.remove('bread')
+
+# print(my_shopping_list)
+# # my_shopping_list.sort()
+# my_sorted_list = sorted(my_shopping_list)
+# print(my_sorted_list)
+
+# # for food in my_shopping_list:
+# #     print(food)
+
+# # for food in my_shopping_list:
+# #     print(f'{my_shopping_list.index(food) + 1}. {food}')
+
+# # print(my_shopping_list[2:3])
+
+# if len(my_sorted_list) == 0:
+#     print('my_sorted_list is empty.')
+
+# if my_shopping_list:
+#     print(f'my_shopping_list has {len(my_shopping_list)} items.')
+
 
 
 
